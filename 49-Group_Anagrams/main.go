@@ -5,8 +5,7 @@ import (
 )
 
 func createHash(rawStr string) [26]byte {
-	// hash - array of length 26 (alphabet) + 25 delimiters.
-	// That's how it looks: 0-0-0-0-0-0-0...0-0
+	// hash - array of length 26 (alphabet)
 	// Each index is letter - a=0, z=26
 	hash := [26]byte{}
 	for _, symb := range rawStr {
